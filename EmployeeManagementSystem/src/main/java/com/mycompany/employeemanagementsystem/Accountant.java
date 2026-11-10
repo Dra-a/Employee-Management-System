@@ -8,6 +8,6 @@ package com.mycompany.employeemanagementsystem;
  *
  * @author ACER
  */
-public class Accountant {
+public class Accountant extends Employee {
     
 }
