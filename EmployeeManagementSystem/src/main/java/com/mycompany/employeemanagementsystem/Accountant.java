@@ -8,6 +8,16 @@ package com.mycompany.employeemanagementsystem;
  *
  * @author ACER
  */
-public class Accountant extends Employee {
-    
+public class Accountant extends Employee implements PaidLeavable {
+
+    private int leaveQuota;
+
+    public String applyLeave() {
+        if (this.leaveQuota > 1) {
+            this.leaveQuota = this.leaveQuota - 1;
+            return ("Usulan cuti berbayar " + this.nama + " disetujui")
+        } else {
+            return ("Kuota cuti berbayar " + this.nama + " tidak mencukupi")
+        }
+    }
 }

@@ -8,6 +8,6 @@ package com.mycompany.employeemanagementsystem;
  *
  * @author ACER
  */
-public class PaidLeavable {
-    
+public interface PaidLeavable {
+    String applyLeave();
 }

@@ -10,4 +10,14 @@ package com.mycompany.employeemanagementsystem;
  */
 public class ProjectManager {
     
+    private int leaveQuota;
+
+    public String applyLeave() {
+        if (this.leaveQuota > 1) {
+            this.leaveQuota = this.leaveQuota - 1;
+            return ("Usulan cuti berbayar " + this.nama + " disetujui")
+        } else {
+            return ("Kuota cuti berbayar " + this.nama + " tidak mencukupi")
+        }
+    }
 }
